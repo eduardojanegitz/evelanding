@@ -1,5 +1,3 @@
-// This is HeroSection component, Main top section of website
-
 import styled, { keyframes } from "styled-components";
 
 import pinkBlob from "../../assets/blobPink.png";
