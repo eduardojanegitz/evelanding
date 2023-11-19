@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import logo from "../../assets/eventory-logo.png";
+import user from "../../assets/icon-user.png";
 
 const Headers = styled.header`
   display: flex;
@@ -33,7 +34,7 @@ const Logo = styled.a`
 `;
 
 const Nav = styled.nav`
-  width: 25rem;
+  width: 32rem;
   max-width: 40rem;
   display: flex;
   align-items: center;
@@ -70,8 +71,9 @@ const Nav = styled.nav`
 `;
 
 const Button = styled.button`
+  display: flex;
   background-color: var(--purple);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.3rem;
   border-radius: 20px;
   color: var(--white);
   font-weight: 600;
@@ -248,7 +250,13 @@ const Header = () => {
           Serviços
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <Button>Contate-nos</Button>
+          Contate-nos
+        </a>
+        <a target="_blank" href="https://eventory-teste.onrender.com/">
+          <Button>
+            <img style={{ marginRight: "5px" }} src={user} />
+            Login
+          </Button>
         </a>
       </Nav>
       <HamburgerBtn clicked={click} onClick={() => setClick(!click)}>
@@ -265,7 +273,10 @@ const Header = () => {
           Serviços
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-          <Button>Contate-nos</Button>
+          Contate-nos
+        </a>
+        <a target="_blank" href="https://eventory-teste.onrender.com/">
+          <Button>Login</Button>
         </a>
       </MobileMenu>
     </Headers>
