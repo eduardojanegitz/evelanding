@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import wave from "../../assets/waves.svg";
-import rocket from "../../assets/rocket image.png";
+import up from "../../assets/up.svg";
 import human from "../../assets/human.svg";
 import hand from "../../assets/hand.svg";
 
@@ -72,7 +72,7 @@ const Content = styled.div`
   }
 `;
 
-const Rocket = styled.div`
+const Up = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
@@ -130,9 +130,9 @@ const About = () => {
           <CurvedLine />
         </div>
         <Content>
-          <Rocket>
-            <img src={rocket} alt="" width="400" height="400" />
-          </Rocket>
+          <Up>
+            <img src={up} alt="" width="400" height="400" />
+          </Up>
           <AboutText>
             <Human>
               <img src={human} alt="" width="400" height="400" />
